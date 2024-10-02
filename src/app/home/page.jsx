@@ -132,7 +132,7 @@ const DataTablePage = () => {
                                         e.target.value = pageOptions.length;
                                     }
                                 }}
-                                className="w-16 text-xs text-center border border-gray-300 rounded-md p-2"
+                                className="w-16 text-sm text-center border border-gray-300 rounded-md p-2"
                             />
                             <select
                                 value={pageSize}
