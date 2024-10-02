@@ -119,7 +119,8 @@ const DataTablePage = () => {
                             </button>
                             <input
                                 type="number"
-                                defaultValue={pageIndex + 1}
+                                // defaultValue={pageIndex + 1}
+                                placeholder='page no.'
                                 onChange={(e) => {
                                     const pageNumber = e.target.value ? Number(e.target.value) - 1 : 0;
                                     if (pageNumber >= 0 && pageNumber < pageOptions.length) {
@@ -131,7 +132,7 @@ const DataTablePage = () => {
                                         e.target.value = pageOptions.length;
                                     }
                                 }}
-                                className="w-16 text-center border border-gray-300 rounded-md p-1"
+                                className="w-16 text-xs text-center border border-gray-300 rounded-md p-2"
                             />
                             <select
                                 value={pageSize}
